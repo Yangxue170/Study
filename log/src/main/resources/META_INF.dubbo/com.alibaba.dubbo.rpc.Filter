@@ -1,0 +1,6 @@
+test1=com.learn.log.dubbo.filter.Test1Filter
+test2=com.learn.log.dubbo.filter.Test2Filter
+test3=com.learn.log.dubbo.filter.Test3Filter
+test4=com.learn.log.dubbo.filter.Test4Filter
+test5=com.learn.log.dubbo.filter.Test5Filter
+
