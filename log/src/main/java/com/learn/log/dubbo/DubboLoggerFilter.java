@@ -1,11 +1,16 @@
 package com.learn.log.dubbo;
 
-import com.alibaba.dubbo.common.Constants;
-import com.alibaba.dubbo.common.URL;
-import com.alibaba.dubbo.remoting.TimeoutException;
-import com.alibaba.dubbo.rpc.*;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
+import org.apache.dubbo.common.URL;
+import org.apache.dubbo.common.constants.CommonConstants;
+import org.apache.dubbo.remoting.TimeoutException;
+import org.apache.dubbo.rpc.Filter;
+import org.apache.dubbo.rpc.Invocation;
+import org.apache.dubbo.rpc.Invoker;
+import org.apache.dubbo.rpc.Result;
+import org.apache.dubbo.rpc.RpcContext;
+import org.apache.dubbo.rpc.RpcException;
 import com.learn.log.constant.LogConstants;
 import com.learn.log.util.ClassUtils;
 import org.apache.dubbo.common.extension.Activate;
@@ -13,9 +18,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
 
-@Activate(group = {Constants.CONSUMER, Constants.PROVIDER})
+/**
+ * group = {CONSUMER, PROVIDER} 表示客户端和和服务端都会加载
+ */
+@Activate(group = { CommonConstants.CONSUMER,CommonConstants.PROVIDER})
 public class DubboLoggerFilter implements Filter {
-    public static final String TIMEOUT = Constants.TIMEOUT_KEY;
+    public static final String TIMEOUT = CommonConstants.TIMEOUT_KEY;
     public static ThreadLocal<String> title = new ThreadLocal<>();
     private final Logger logger = LoggerFactory.getLogger(LogConstants.DUBBO_LOG_PACKAGE);
 
@@ -47,7 +55,7 @@ public class DubboLoggerFilter implements Filter {
     @Override
     public Result invoke(Invoker<?> invoker, Invocation invocation) throws RpcException {
         RpcContext context = RpcContext.getContext();
-        String role = context.isProviderSide() ? Constants.PROVIDER : Constants.CONSUMER;
+        String role = context.isProviderSide() ? CommonConstants.PROVIDER : CommonConstants.CONSUMER;
         String argumentJson = toJsonString(invocation.getArguments());
         URL url = context.getUrl();
         String interfaceName = null;
@@ -56,7 +64,7 @@ public class DubboLoggerFilter implements Filter {
         }
         String methodName = context.getMethodName();
         String remote = context.getRemoteAddressString();
-        Result.CompatibleResult result = null;
+        Result result = null;
         Object resultValue = null;
         Throwable resultException = null;
         long start = System.currentTimeMillis();
@@ -75,7 +83,7 @@ public class DubboLoggerFilter implements Filter {
 
         try {
             //执行具体的方法
-            result = (Result.CompatibleResult) invoker.invoke(invocation);
+            result =  invoker.invoke(invocation);
         } catch (Exception e) {
             hasException = true;
             resultException = e;

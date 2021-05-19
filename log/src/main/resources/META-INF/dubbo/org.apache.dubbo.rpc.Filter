@@ -1,0 +1,2 @@
+dubboLoggerFilter=com.learn.log.dubbo.DubboLoggerFilter
+
