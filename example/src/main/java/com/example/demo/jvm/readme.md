@@ -1,3 +1,10 @@
+
+使用 javap -v ClassFile.class 得到指令集合
+
+
+#### classLoader demo, HelloLoader.java
+![img.png](img.png)
+
 #### jvm了解哪些参数，用过哪些指令
 
 #### jvm类加载器，自定义类加载器，双亲委派机制，优缺点，tomcat类加载机制

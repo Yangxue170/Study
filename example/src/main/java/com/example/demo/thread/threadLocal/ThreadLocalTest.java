@@ -12,16 +12,22 @@ public class ThreadLocalTest {
 
     private ThreadLocal<Integer> localInt = new ThreadLocal<>();
 
-    public int setAndGet(){
+    /**
+     * 进行设置
+     *
+     * @return
+     */
+    public int setAndGet() {
         localInt.set(8);
         return localInt.get();
     }
+
     public static void main(String[] args) {
         //本线程自己使用的
         ThreadLocal threadLocal = new ThreadLocal();
         //父子间共用的threadLocal
 //        InheritableThreadLocal threadLocal = new InheritableThreadLocal();
-        IntStream.range(0,10).forEach(i -> {
+        IntStream.range(0, 10).forEach(i -> {
             //每个线程的序列号，希望在子线程中能够拿到
             threadLocal.set(i);
             //这里来了一个子线程，我们希望可以访问上面的threadLocal
