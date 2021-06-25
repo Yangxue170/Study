@@ -7,7 +7,9 @@ package com.example.demo.jvm.chapter01;
  * @date 2021/6/18 17:59
  */
 public class HelloLoader {
-    //prepare阶段：a=0 , initial阶段: a=1
+    /**
+     * /prepare阶段：a=0 , initial阶段  a=1
+     */
     private static int a = 1;
 
     public static void main(String[] args) {
