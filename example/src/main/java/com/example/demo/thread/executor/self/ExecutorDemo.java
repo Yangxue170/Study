@@ -1,4 +1,4 @@
-package com.example.demo.thread.executor;
+package com.example.demo.thread.executor.self;
 
 /**
  * @author Jdx
