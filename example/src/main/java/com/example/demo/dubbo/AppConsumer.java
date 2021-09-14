@@ -1,6 +1,6 @@
-package org.example.dubbo;
+package com.example.demo.dubbo;
 
-import org.example.dubbo.provider.ProviderService;
+import com.example.demo.dubbo.provider.ProviderService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.IOException;

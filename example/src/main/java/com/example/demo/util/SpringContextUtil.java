@@ -1,4 +1,4 @@
-//package org.example.util;
+//package com.example.demo.util;
 //
 //import org.springframework.context.ApplicationContext;
 //

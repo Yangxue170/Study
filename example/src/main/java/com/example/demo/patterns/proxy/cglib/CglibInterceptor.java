@@ -1,9 +1,9 @@
-package org.example.design.patterns.proxy.cglib;
+package com.example.demo.patterns.proxy.cglib;
 
+import com.example.demo.patterns.proxy.StudentService;
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
-import org.example.design.patterns.proxy.StudentService;
 
 import java.lang.reflect.Method;
 

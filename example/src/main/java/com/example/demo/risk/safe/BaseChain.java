@@ -1,4 +1,4 @@
-package org.example.risk.safe;
+package com.example.demo.risk.safe;
 
 import java.util.Comparator;
 import java.util.List;

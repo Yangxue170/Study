@@ -1,4 +1,4 @@
-package org.example.mybatis;
+package com.example.demo.mybatis;
 
 import com.baomidou.mybatisplus.core.MybatisConfiguration;
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;

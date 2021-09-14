@@ -1,4 +1,4 @@
-package org.example.logback;
+package com.example.demo.logback;
 
 import com.alibaba.dubbo.rpc.*;
 import org.slf4j.Logger;

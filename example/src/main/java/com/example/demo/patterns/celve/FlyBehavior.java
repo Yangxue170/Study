@@ -1,4 +1,4 @@
-package org.example.design.patterns.celve;
+package com.example.demo.patterns.celve;
 
 /**
  * @author Jdx

@@ -1,6 +1,6 @@
 
 ###Arraylist线程不安全
-case: org.example.jdk8.ListDemo
+case: com.example.demo.jdk8.ListDemo
 > - vector,所有方法都具有 synchronized 关键修饰。
 > - Collections.synchronizedList(new ArrayList<>())所有方法都是带同步对象锁synchronized
 > - ThreadLocal 每new一个新的线程，变量也会new一次，一定程度上会造成性能[内存]损耗

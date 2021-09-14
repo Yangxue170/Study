@@ -1,4 +1,4 @@
-package org.example.map;
+package com.example.demo.map;
 
 import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;

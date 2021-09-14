@@ -1,4 +1,4 @@
-//package org.example;
+//package com.example.demo;
 //
 //import com.alibaba.csp.sentinel.Entry;
 //import com.alibaba.csp.sentinel.SphU;

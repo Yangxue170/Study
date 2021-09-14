@@ -1,4 +1,4 @@
-package org.example.deadlock;
+package com.example.demo.deadlock;
 /**
  *
  死锁条件

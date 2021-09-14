@@ -13,7 +13,7 @@
     <logger name="com.alibaba.druid.filter.stat" level="INFO"/>
     <logger name="ShardingSphere-SQL" level="WARN"/>
 
-    <!--    todo org.example.logback.MlsProviderFilter-->
+    <!--    todo com.example.demo.logback.MlsProviderFilter-->
     <!--去除无关logger-->
     <logger name="dubboProviderLogger" level="OFF"/>
     <logger name="dubboConsumerLogger" level="OFF"/>

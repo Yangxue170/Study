@@ -1,4 +1,4 @@
-package org.example.serialize;
+package com.example.demo.serialize;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.ImmutableList;

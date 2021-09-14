@@ -1,4 +1,4 @@
-package org.example.kafka;
+package com.example.demo.kafka;
 
 /**
  * @author Jdx

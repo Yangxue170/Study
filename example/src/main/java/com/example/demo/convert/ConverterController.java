@@ -1,6 +1,5 @@
-package org.example.convert;
+package com.example.demo.convert;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,7 +22,7 @@ public class ConverterController {
     }
 
     @GetMapping("date")
-    public DateResp resp(Date date) {
+    public  DateResp resp(Date date) {
         DateResp resp = new DateResp();
         resp.setDate(date);
         return resp;

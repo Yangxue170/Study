@@ -1,4 +1,4 @@
-package org.example.map;
+package com.example.demo.map;
 
 /**
  * @author Jdx

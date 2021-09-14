@@ -1,4 +1,4 @@
-package org.example.design.patterns.proxy.jdk;
+package com.example.demo.patterns.proxy.jdk;
 
 /**
  * @author Jdx

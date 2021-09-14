@@ -1,7 +1,7 @@
-package org.example.design.patterns.proxy.stati;
+package com.example.demo.patterns.proxy.stati;
 
-import org.example.design.patterns.proxy.StudentService;
-import org.example.design.patterns.proxy.jdk.IStudentService;
+import com.example.demo.patterns.proxy.StudentService;
+import com.example.demo.patterns.proxy.jdk.IStudentService;
 
 /**
  * @author Jdx

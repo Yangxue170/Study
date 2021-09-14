@@ -1,4 +1,4 @@
-package org.example.design.patterns.proxy.aop;
+package com.example.demo.patterns.proxy.aop;
 
 import java.util.Objects;
 

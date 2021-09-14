@@ -1,4 +1,4 @@
-package org.example.http;
+package com.example.demo.http;
 
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
 import org.apache.http.client.config.RequestConfig;

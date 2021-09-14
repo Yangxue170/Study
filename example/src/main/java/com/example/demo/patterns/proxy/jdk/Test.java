@@ -1,7 +1,7 @@
-package org.example.design.patterns.proxy.jdk;
+package com.example.demo.patterns.proxy.jdk;
 
-import org.example.design.patterns.proxy.StudentService;
-import org.example.design.patterns.proxy.jdk.IStudentService;
+
+import com.example.demo.patterns.proxy.StudentService;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

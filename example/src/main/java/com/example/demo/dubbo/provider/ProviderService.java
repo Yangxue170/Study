@@ -1,4 +1,4 @@
-package org.example.dubbo.provider;
+package com.example.demo.dubbo.provider;
 
 /**
  * @author Jdx

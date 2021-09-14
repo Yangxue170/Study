@@ -1,4 +1,4 @@
-package org.example.jdk8;
+package com.example.demo.jdk8;
 
 import java.util.function.Consumer;
 

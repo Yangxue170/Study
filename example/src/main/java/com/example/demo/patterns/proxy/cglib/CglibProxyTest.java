@@ -1,4 +1,4 @@
-package org.example.design.patterns.proxy.cglib;
+package com.example.demo.patterns.proxy.cglib;
 
 /**
  * @author Jdx

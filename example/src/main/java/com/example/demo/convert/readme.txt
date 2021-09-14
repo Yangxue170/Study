@@ -11,7 +11,7 @@
 
     解决方案：
         1、利用spring框架中的Converter接口实现自定义Bean
-            org.example.convert.DateConvert
+            com.example.demo.convert.DateConvert
         2、直接在相关的字段上使用 JsonFormat 注解。
             @JsonFormat(pattern = “yyyy-MM-dd HH:mm:ss”, timezone = “GMT+8”)
             private Date time;

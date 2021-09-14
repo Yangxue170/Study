@@ -1,4 +1,4 @@
-package org.example.map;
+package com.example.demo.map;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;

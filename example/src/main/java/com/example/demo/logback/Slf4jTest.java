@@ -1,4 +1,4 @@
-package org.example.logback;
+package com.example.demo.logback;
 
 import org.junit.Test;
 
@@ -13,7 +13,7 @@ import org.slf4j.LoggerFactory;
  */
 public class Slf4jTest {
     /**
-     * LoggerFactory.getLogger(Slf4jTest.class)，首先找到name="org.example"这个<logger>
+     * LoggerFactory.getLogger(Slf4jTest.class)，首先找到name="com.example.demo"这个<logger>
      */
     private static final Logger logger = LoggerFactory.getLogger(Object.class);
 

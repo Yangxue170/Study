@@ -1,4 +1,4 @@
-package org.example.servlet;
+package com.example.demo.servlet;
 
 import org.springframework.util.StreamUtils;
 

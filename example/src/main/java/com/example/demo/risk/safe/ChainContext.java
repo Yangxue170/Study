@@ -1,4 +1,4 @@
-package org.example.risk.safe;
+package com.example.demo.risk.safe;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.Serializable;
