@@ -27,7 +27,6 @@ public class ReentrantLockTest {
     }
 }
 
-
 class Counter {
     private int count;
 
