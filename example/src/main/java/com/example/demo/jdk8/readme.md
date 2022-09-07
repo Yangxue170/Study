@@ -1,5 +1,5 @@
 
-###Arraylist线程不安全
+### Arraylist线程不安全
 case: com.example.demo.jdk8.ListDemo
 > - vector,所有方法都具有 synchronized 关键修饰。
 > - Collections.synchronizedList(new ArrayList<>())所有方法都是带同步对象锁synchronized
@@ -11,10 +11,10 @@ case: com.example.demo.jdk8.ListDemo
 
 
 
-####HashSet线程不安全
+#### HashSet线程不安全
 用CopyOnWriteArraySet（底层还是用的CopyOnWriteArrayList）
 
-####HashMap线程不安全
+#### HashMap线程不安全
 使用Collections.synchronizedMap(new HashMap<>())
 使用ConcurrentHashMap
 
